@@ -59,7 +59,7 @@ const Contact = () => {
           {/* Google Forms Embed */}
           <div className="h-full">
             <iframe
-              src="/features/custom-domain#do-i-need-to-connect-a-www-subdomain-separately"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSfCEtGBOa3J-tUkjcRKQ6yuKUqTA9IAYZfzCc2khud_DaU7og/viewform?usp=dialog"
               width="100%"
               height="800"
               frameBorder="0"
