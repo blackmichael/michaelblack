@@ -1,15 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Card } from "@/components/ui/card";
 import { Mail, MapPin, Phone, Github, Linkedin, Twitter } from "lucide-react";
-import { toast } from "sonner";
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast.success("Message sent! I'll get back to you soon.");
-  };
 
   return (
     <section id="contact" className="py-24 bg-gradient-subtle">
@@ -63,59 +56,20 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
-          <Card className="p-6 shadow-soft">
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <div>
-                <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                  Name
-                </label>
-                <Input 
-                  id="name" 
-                  placeholder="Your name" 
-                  required 
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                  Email
-                </label>
-                <Input 
-                  id="email" 
-                  type="email" 
-                  placeholder="your.email@example.com" 
-                  required 
-                />
-              </div>
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                  Subject
-                </label>
-                <Input 
-                  id="subject" 
-                  placeholder="What's this about?" 
-                  required 
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                  Message
-                </label>
-                <Textarea 
-                  id="message" 
-                  placeholder="Your message..." 
-                  rows={5}
-                  required 
-                />
-              </div>
-              <Button 
-                type="submit" 
-                className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
-              >
-                Send Message
-              </Button>
-            </form>
-          </Card>
+          {/* Google Forms Embed */}
+          <div className="h-full">
+            <iframe
+              src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true"
+              width="100%"
+              height="800"
+              frameBorder="0"
+              marginHeight={0}
+              marginWidth={0}
+              className="rounded-lg shadow-soft"
+            >
+              Loading…
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
