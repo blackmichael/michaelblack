@@ -18,7 +18,7 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-6 text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground leading-tight">
-                               Hi, I'm Michael Black                               <span className="text-accent">Michael Black      </span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Hi, I'm Michael Black                               <span className="text-accent">Michael Black      </span>
           </h1>
           <p className="text-xl md:text-2xl text-primary-foreground/90 font-light">
             Full Stack Developer & Creative Problem Solver
